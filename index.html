@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SweetNecta — Four moments, four coffees.</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- GSAP + Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-logo">SWEETNECTA</div>
+  </nav>
+
+  <!-- ============================================
+       SECTION 1: HERO - Scroll-Scrub Video
+       ============================================ -->
+  <section class="hero-section" id="section-1">
+    <div class="hero-content">
+      <p class="hero-opening">When you don't have your morning coffee, things just aren't right.</p>
+      <h1 class="hero-title">SWEETNECTA</h1>
+      <p class="hero-subtitle">Four moments. Four coffees.</p>
+    </div>
+    
+    <video id="video-1" class="hero-video" muted playsinline preload="auto">
+      <source src="videos/make_the_woman_turn_her_head_slightly__and_animate_the_clouds_in_the_background_with_wi1729005062569_encoded.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- ============================================
+       SECTION 2: PINNED PANEL - Coffee 1
+       ============================================ -->
+  <div class="panel-container">
+    <section class="panel" id="coffee-1" style="background: #0A0806; z-index: 1;">
+      <div class="panel-content">
+        <span class="coffee-number">01 / The Classic</span>
+        <h2 class="panel-title kinetic-title">THE CLASSIC</h2>
+        <p class="panel-subtitle">The one you reach for every morning.</p>
+        <p style="font-size: 1.125rem; color: var(--color-text-muted); margin-top: 2rem; max-width: 600px;">
+          Reliable. Balanced. Beautiful. A medium roast that never lets you down, with notes of caramel, hazelnut, and dark chocolate.
+        </p>
+        <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-dim); margin-top: 1.5rem; letter-spacing: 0.1em;">
+          Medium Roast · Ethiopia · Washed Process · $24
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: PINNED PANEL - Video 2
+         ============================================ -->
+    <section class="panel" id="section-2" style="background: #11100E; z-index: 2;">
+      <div class="panel-content">
+        <h2 class="panel-title">THE POUR</h2>
+        <p class="panel-subtitle">Every drop matters.</p>
+      </div>
+      
+      <video id="video-2" class="hero-video" muted playsinline preload="auto" style="opacity: 0.6;">
+        <source src="videos/make_the_coffee_pour_into_the_cup1729247033171_encoded.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: PINNED PANEL - Coffee 2
+         ============================================ -->
+    <section class="panel" id="coffee-2" style="background: #161412; z-index: 3;">
+      <div class="panel-content">
+        <span class="coffee-number">02 / The Night Owl</span>
+        <h2 class="panel-title kinetic-title">THE NIGHT OWL</h2>
+        <p class="panel-subtitle">For those who burn the midnight oil.</p>
+        <p style="font-size: 1.125rem; color: var(--color-text-muted); margin-top: 2rem; max-width: 600px;">
+          Bold. Intense. Uncompromising. A dark roast that keeps you company through the late hours, with smoky oak, molasses, and the taste of midnight.
+        </p>
+        <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-dim); margin-top: 1.5rem; letter-spacing: 0.1em;">
+          Dark Roast · Sumatra · Wet-Hulled Process · $28
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: PINNED PANEL - Video 3
+         ============================================ -->
+    <section class="panel" id="section-3" style="background: #1C1A18; z-index: 4;">
+      <div class="panel-content">
+        <h2 class="panel-title">THE DESCENT</h2>
+        <p class="panel-subtitle">A journey in every sip.</p>
+      </div>
+      
+      <video id="video-3" class="hero-video" muted playsinline preload="auto" style="opacity: 0.6;">
+        <source src="videos/pour_the_coffee_down_1730106539561_encoded.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- ============================================
+         SECTION 6: PINNED PANEL - Coffee 3
+         ============================================ -->
+    <section class="panel" id="coffee-3" style="background: #211E1C; z-index: 5;">
+      <div class="panel-content">
+        <span class="coffee-number">03 / The Sunrise</span>
+        <h2 class="panel-title kinetic-title">THE SUNRISE</h2>
+        <p class="panel-subtitle">The first sip that changes everything.</p>
+        <p style="font-size: 1.125rem; color: var(--color-text-muted); margin-top: 2rem; max-width: 600px;">
+          Bright. Crisp. Full of possibility. A light roast that tastes like morning itself, with citrus, honey, and the freshness of dew on new leaves.
+        </p>
+        <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-dim); margin-top: 1.5rem; letter-spacing: 0.1em;">
+          Light Roast · Kenya · Washed Process · $26
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 7: PINNED PANEL - Video 4
+         ============================================ -->    <section class="panel" id="section-4" style="background: #262422; z-index: 6;">
+      <div class="panel-content">
+        <h2 class="panel-title">THE SOURCE</h2>
+        <p class="panel-subtitle">Even robots need their fix.</p>
+      </div>
+      
+      <video id="video-4" class="hero-video" muted playsinline preload="auto" style="opacity: 0.6;">
+        <source src="videos/pour_the_coffee_out_the_robot_1729673528966_encoded.mp4" type="video/mp4">
+      </video>
+    </section>
+
+  </div>
+
+  <!-- ============================================
+       SECTION 8: SUBSCRIBE
+       ============================================ -->
+  <section class="subscribe" id="subscribe">
+    <div class="subscribe-content">
+      <h2 class="subscribe-title">JOIN THE RITUAL</h2>
+      <p class="subscribe-subtitle">Fresh roasted. Delivered monthly. Cancel anytime.</p>
+      
+      <form class="subscribe-form">
+        <input type="email" class="form-input" placeholder="your@email.com" required>
+        <select class="form-select">
+          <option value="classic">The Classic</option>
+          <option value="night-owl">The Night Owl</option>
+          <option value="sunrise">The Sunrise</option>
+          <option value="all-three">All Three</option>
+        </select>
+        <button type="submit" class="form-submit">Begin</button>
+      </form>
+      
+      <p class="subscribe-footer">Roasted in small batches. Shipped fresh. No corporate bullshit.</p>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

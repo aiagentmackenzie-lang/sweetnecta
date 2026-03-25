@@ -83,6 +83,13 @@ sweetnecta-final/
 
 Built with the **homepage-master** skill — premium cinematic website builder for award-winning scroll experiences.
 
+## Contact
+
+Want a cinematic website like this? Get in touch:
+
+- 📧 **Email**: aiagent.mackenzie@gmail.com
+- 💼 **Services**: Web Design, Mobile App Development, AI Solutions, OpenClaw Setup
+
 ## License
 
 Proprietary — SweetNecta Brand Experience
